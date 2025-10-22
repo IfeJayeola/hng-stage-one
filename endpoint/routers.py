@@ -3,4 +3,4 @@ from .views import StringViewSet
 
 
 router = DefaultRouter()
-router.register(r'string', StringViewSet)
+router.register(r'strings', StringViewSet)
