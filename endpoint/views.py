@@ -8,3 +8,4 @@ from rest_framework import viewsets
 class StringViewSet(viewsets.ModelViewSet):
     queryset = StringModel.objects.all()
     serializer_class = StringSerializers
+    lookup_field ='value'
