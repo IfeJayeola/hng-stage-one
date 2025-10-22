@@ -3,6 +3,7 @@ certifi==2025.10.5
 charset-normalizer==3.4.4
 click==8.3.0
 deta==1.2.0
+dj-database-url==3.0.1
 Django==5.2.7
 django-filter==25.2
 django-rest-framework==0.1.0
