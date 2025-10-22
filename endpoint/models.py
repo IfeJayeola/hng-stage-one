@@ -10,13 +10,12 @@ class PropertyModel(models.Model):
     sha256_hash = models.CharField(max_length=64)
     character_frequency_map = models.JSONField()
 
-
-
 class StringModel(models.Model):
     id = models.CharField(
-                          max_length=64,
-                          primary_key = True,
-                          editable = False)
+        max_length=64,
+        primary_key=True,
+        editable=False
+    )
     value = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -24,4 +23,3 @@ class StringModel(models.Model):
         PropertyModel,
         on_delete=models.CASCADE,
     )
-    
