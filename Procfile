@@ -1,1 +1,1 @@
-web: gunicorn string_analyzer.wsgi:application
+web: DJANGO_SETTINGS_MODULE=string_analyzer.settings gunicorn string_analyzer.wsgi:application
